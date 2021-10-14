@@ -1,0 +1,9 @@
+ $petList.size() Pets on Sale!
+  We are proud to offer these fine pets
+  at these amazing prices.  This month only,
+  choose from:
+  #foreach( $pet in $petList )
+  #set($pet.price=$pet.price+1)
+    $pet.name for only $pet.price
+  #end
+   Call Today!
